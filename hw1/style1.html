@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font: 100% Lucida Sans, Verdana;
+            line-height: 26px;
+        }
+
+        #flex-container {
+            display: flex;
+            gap: 10px;
+        }
+
+        #head,
+        .menubar,
+        #sidebar {
+            border-radius: 4px;
+            margin: 4px;
+        }
+
+        #head {
+            background-color: #04AA6D;
+            color: #ffffff;
+            padding: 15px;
+            margin-left: 4px;
+        }
+
+        #head h1,
+        #head p {
+            margin: 0;
+            padding: 0;
+        }
+
+        #menubar {
+            flex: 1;
+        }
+        #menubar ul {
+            list-style-type: none; 
+            padding-left: 0; 
+            margin: 0; 
+        }
+
+        #main {
+            flex: 4.5;
+        }
+
+        #sidebar {
+            flex: 0.8;
+            padding: 10px;
+        }
+
+        .menubar {
+            background-color: #f1f1f1;
+            border: 1px solid #d4d4d4;
+            list-style-type: none;
+            padding: 0px 0px;
+            cursor: pointer;
+            font: black;
+        }
+
+        #first {
+            background-color: #04AA6D;
+            color: white;
+            font-weight: bold;
+        }
+
+        #sidebar {
+            background-color: #32a4e7;
+            color: #ffffff;
+        }
+
+        #footer {
+            border: 1px solid #d4d4d4;
+            background-color: #f1f1f1;
+            text-align: center;
+            padding: 10px;
+            font-size: 70%;
+            line-height: 14px;
+            border-radius: 4px;
+        }
+
+        .aaa {
+            text-decoration: none;
+        }
+
+        a {
+            color: #000000;
+            text-decoration: underline;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="head">
+        <h1>Welcome to 22200356's Homepage</h1>
+        <p>Use the menu to select different Stylesheets</p>
+    </div>
+
+    <div id="flex-container">
+        <div id="menubar">
+            <ul>
+                <a href="style1.html" class="aaa">
+                    <li class="menubar" id="first">Stylesheet 1</li>
+                </a>
+                <a href="style2.html" class="aaa">
+                    <li class="menubar">Stylesheet 2</li>
+                </a>
+                <a href="style3.html" class="aaa">
+                    <li class="menubar">Stylesheet 3</li>
+                </a>
+                <a href="style4.html" class="aaa">
+                    <li class="menubar">Stylesheet 4</li>
+                </a>
+                <a href="nostyle.html" class="aaa">
+                    <li class="menubar">No stylesheet</li>
+                </a>
+            </ul>
+        </div>
+
+        <div id="main">
+            <h1>Same Page Different Stylesheets</h1>
+            <p>This is a demonstration of how different stylesheets can change the layout of your HTML page.
+                You can change the layout of this page by selecting different stylesheets in the menu, or by selecting
+                one of the following links:<br>
+                <a href="style1.html">Stylesheet1,</a>
+                <a href="style2.html">Stylesheet2,</a>
+                <a href="style3.html">Stylesheet3,</a>
+                <a href="style4.html">Stylesheet4.</a>
+            </p>
+
+            <h2>No Styles</h2>
+            <p>This page uses DIV elements to group different sections of the HTML page.
+                Click here to see how the page looks like with no stylesheet:<br>
+                <a href="nostyle.html">No Stylesheet.</a>
+            </p>
+        </div>
+
+        <div id="sidebar">
+            <h3>Side-Bar</h3>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                laoreet dolore magna aliquam erat volutpat.</p>
+        </div>
+    </div>
+
+    <div id="footer">
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+            dolore magna aliquam erat volutpat.
+            Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
+            commodo consequat.
+            Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat,
+            vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit
+            praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+        </p>
+    </div>
+</body>
+
+</html>
